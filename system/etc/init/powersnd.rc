@@ -1,0 +1,10 @@
+# { Rune.AUDIO_SUPPORT_POWER_SOUND_VOLUME
+on boot
+service powersnd /system/bin/samsungpowersoundplay
+    class main
+    user audioserver
+    group system
+    disabled
+    oneshot
+# } Rune.AUDIO_SUPPORT_POWER_SOUND_VOLUME
+

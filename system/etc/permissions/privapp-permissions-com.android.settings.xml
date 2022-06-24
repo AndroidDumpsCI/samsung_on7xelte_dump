@@ -1,0 +1,12 @@
+<permissions>
+    <privapp-permissions package="com.android.settings">
+        <permission name="android.permission.INVOKE_CARRIER_SETUP"/>
+        <permission name="android.permission.LOCAL_MAC_ADDRESS"/>
+        <permission name="android.permission.MANAGE_ACTIVITY_STACKS"/>
+        <permission name="android.permission.REAL_GET_TASKS"/>
+        <permission name="android.permission.SHUTDOWN"/>
+        <permission name="com.samsung.android.permission.CHANGE_DISPLAY_COLOR"/>
+        <permission name="com.samsung.android.fota.permission.READ_DATABASES"/>
+        <permission name="com.samsung.android.provider.indexing.permission.ACCESS_PROVIDER"/>
+    </privapp-permissions>
+</permissions>

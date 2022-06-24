@@ -1,0 +1,8 @@
+<permissions>
+    <privapp-permissions package="com.samsung.android.app.soundpicker">
+        <permission name="android.permission.MANAGE_USERS"/>
+        <permission name="android.permission.SUBSTITUTE_NOTIFICATION_APP_NAME"/>
+        <permission name="android.permission.WRITE_MEDIA_STORAGE"/>
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+    </privapp-permissions>
+</permissions>

@@ -1,0 +1,11 @@
+ <permissions>
+        <privapp-permissions package="com.samsung.android.samsungpass">
+            <permission name="android.permission.GET_ACCOUNTS_PRIVILEGED"/>
+            <permission name="android.permission.INSTALL_PACKAGES"/>
+            <permission name="android.permission.MANAGE_ACTIVITY_STACKS"/>
+            <permission name="android.permission.MANAGE_USERS"/>
+            <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+            <permission name="android.permission.REAL_GET_TASKS"/>
+            <permission name="com.samsung.android.bio.face.permission.USE_FACE"/>
+        </privapp-permissions>
+ </permissions>

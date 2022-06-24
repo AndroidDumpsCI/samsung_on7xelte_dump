@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2017 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<!-- These are configurations that must exist on all Android devices. -->
+<config>
+
+    <!-- Broadcast actions that are currently exempted from O+ background
+         delivery restrictions. -->
+    <allow-implicit-broadcast action="android.intent.action.SIM_STATE_CHANGED" />
+    <allow-implicit-broadcast action="android.intent.action.PACKAGE_CHANGED" />
+    <allow-implicit-broadcast action="android.intent.action.MEDIA_SCANNER_SCAN_FILE" />
+    <allow-implicit-broadcast action="android.media.action.OPEN_AUDIO_EFFECT_CONTROL_SESSION" />
+    <allow-implicit-broadcast action="android.media.action.CLOSE_AUDIO_EFFECT_CONTROL_SESSION" />
+    <allow-implicit-broadcast action="com.samsung.android.net.wifi.SHOW_INFO_MESSAGE" />
+    <allow-implicit-broadcast action="com.samsung.android.net.wifi.SHOW_SCC_DIALOG" />
+    <allow-implicit-broadcast action="com.sec.android.intent.action.REQUEST_BACKUP_WIFIWPACONF" />
+    <allow-implicit-broadcast action="com.sec.android.intent.action.RESPONSE_BACKUP_WIFIWPACONF" />
+    <allow-implicit-broadcast action="com.sec.android.intent.action.REQUEST_RESTORE_WIFIWPACONF" />
+    <allow-implicit-broadcast action="com.sec.android.intent.action.RESPONSE_RESTORE_WIFIWPACONF" />
+    <allow-implicit-broadcast action="com.kt.wifiapi.OEMExtension.NOTIFICATION" />
+    <allow-implicit-broadcast action="com.samsung.account.SAMSUNGACCOUNT_SIGNIN_COMPLETED" />
+    <allow-implicit-broadcast action="com.samsung.account.SAMSUNGACCOUNT_SIGNOUT_COMPLETED" />
+    <allow-implicit-broadcast action="com.samsung.account.SAMSUNGACCOUNT_RESIGNIN_COMPLETED" />
+    <allow-implicit-broadcast action="com.samsung.account.SAMSUNGACCOUNT_RESIGNIN_VIEW" />
+    <allow-implicit-broadcast action="com.samsung.account.SAMSUNGACCOUNT_PROFILE_SETUP_COMPLETED" />
+    <allow-implicit-broadcast action="com.samsung.account.SIGNIN_CLICK_SAMSUNGACCOUNT" />
+    <allow-implicit-broadcast action="com.samsung.account.REGISTRATION_COMPLETED" />
+    <allow-implicit-broadcast action="com.samsung.account.REMOVE_SAMSUNGACCOUNT" />
+    <allow-implicit-broadcast action="com.osp.app.signin.action.EMAIL_VALIDATION_COMPLETED" />
+    <allow-implicit-broadcast action="osp.signin.SAMSUNG_ACCOUNT_SIGNOUT" />
+    <!-- temporally added during Dream O Dev for SamsungPay team request -->
+    <allow-implicit-broadcast action="com.samsung.account.SA_CUSTOMIZED_SERVICE_COLLECTION" />
+    <allow-implicit-broadcast action="com.samsung.provider.Telephony.WAP_PUSH_DM_NOTI_RECEIVED" />
+    <allow-implicit-broadcast action="com.samsung.intent.action.CUSTOMER_TEST_REQUEST" />
+    <allow-implicit-broadcast action="com.samsung.intent.action.CUSTOMER_TEST_RESPONSE" />
+
+    <allow-implicit-broadcast action="com.sec.enterprise.knox.intent.action.ENROLL" />
+    <allow-implicit-broadcast action="com.sec.enterprise.knox.intent.action.UNENROLL" />
+
+    <!-- discussed with Google on b/66965143 -->
+    <allow-implicit-broadcast action="android.app.action.SYSTEM_UPDATE_POLICY_CHANGED" />
+
+    <!--  Blue light filter service -->
+    <allow-implicit-broadcast action="com.samsung.intent.action.EMERGENCY_STATE_CHANGED" />
+    <allow-implicit-broadcast action="android.location.PROVIDERS_CHANGED" />
+    <allow-implicit-broadcast action="com.samsung.intent.action.NITZ_SET_TIME" />
+
+    <!-- ATT BCS OP -->
+    <allow-implicit-broadcast action="com.samsung.intent.action.BCS_REQUEST" />
+
+    <!-- DIR -->
+    <allow-implicit-broadcast action="com.samsung.android.intent.action.ACCESSORY_SETUPWIZARD_COMPLETE" />
+
+    <!-- Whitelist of what components are permitted as backup data transports.  The
+         'service' attribute here is a flattened ComponentName string. -->
+    <backup-transport-whitelisted-service
+        service="android/com.android.internal.backup.LocalTransportService" />
+    <backup-transport-whitelisted-service
+        service="com.samsung.android.service.peoplestripe/com.samsung.android.service.peoplestripe.PeopleStripeService" />
+    <backup-transport-whitelisted-service
+        service="com.samsung.android.service.peoplestripe/com.samsung.android.service.peoplestripePeopleNotiListenerService" />
+    <backup-transport-whitelisted-service
+        service="com.samsung.android.service.peoplestripe.PeopleStripeService/com.samsung.android.service.peoplestripe.people.edgepanel.PeopleHelpRemoteAdapter"/>
+    <backup-transport-whitelisted-service
+        service="com.samsung.knox.securefolder/com.samsung.knox.securefolder" />
+    <backup-transport-whitelisted-service
+        service="com.sec.android.easyMover/com.sec.android.easyMover" />
+
+    <!-- start White list:CONNECTIVITY_CHANGE for Verizon broadcast -->
+    <allow-implicit-broadcast action="com.verizon.net.CONNECTIVITY_CHANGE" />
+    <!-- End White list for Verizon broadcast -->
+
+
+    <!-- start White list:CONNECTIVITY_CHANGE for Verizon broadcast -->
+    <allow-implicit-broadcast action="com.verizon.net.CONNECTIVITY_CHANGE" />
+    <allow-implicit-broadcast action="com.verizon.provider.Settings.PHONE_STATE_MODIFY" />
+    <allow-implicit-broadcast action="com.verizon.net.IMS_REGISTRATION" />
+    <allow-implicit-broadcast action="com.verizon.provider.ACTION_SETTING_CHANGED" />
+    <!-- End White list for Verizon broadcast -->
+
+    <!-- start White list for Verizon demo mode -->
+    <allow-implicit-broadcast action="com.verizon.llkagent.SPEN_CONNECTION_REMINDER" />
+    <!-- End White list for Verizon demo mode -->
+
+    <!-- FMM Lock, Unlock Intent -->
+    <allow-implicit-broadcast action="com.samsung.internal.policy.impl.Keyguard.PCW_LOCKED" />
+    <allow-implicit-broadcast action="com.samsung.internal.policy.impl.Keyguard.PCW_UNLOCKED" />
+    <!-- FMM Lock, Unlock Intent -->
+
+    <!-- Whitelist of bundled applications which all handle URLs to their websites by default -->
+    <app-link package="com.android.carrierdefaultapp" />
+
+    <!-- Bluetooth Backup & Restore broadcast -->
+    <allow-implicit-broadcast action="com.samsung.android.intent.action.REQUEST_BACKUP_BLUETOOTH" />
+    <allow-implicit-broadcast action="com.samsung.android.intent.action.REQUEST_RESTORE_BLUETOOTH" />
+    <allow-implicit-broadcast action="com.samsung.android.intent.action.RESPONSE_BACKUP_BLUETOOTH" />
+    <allow-implicit-broadcast action="com.samsung.android.intent.action.RESPONSE_RESTORE_BLUETOOTH" />
+
+    <!-- Samsung Members broadcast -->
+    <allow-implicit-broadcast action="com.samsung.android.voc.action.SYSTEM_ERROR" />
+</config>

@@ -1,0 +1,5 @@
+<permissions>
+        <privapp-permissions package="com.samsung.crane">
+            <permission name="android.permission.STATUS_BAR"/>
+        </privapp-permissions>
+</permissions>

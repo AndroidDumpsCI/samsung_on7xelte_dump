@@ -1,0 +1,12 @@
+<permissions>
+    <privapp-permissions package="com.android.phone">
+        <permission name="android.permission.CAPTURE_AUDIO_OUTPUT"/>
+        <permission name="android.permission.LOOP_RADIO"/>
+        <permission name="android.permission.READ_NETWORK_USAGE_HISTORY"/>
+        <permission name="android.permission.REAL_GET_TASKS"/>
+        <permission name="android.permission.TETHER_PRIVILEGED"/>
+        <permission name="com.samsung.android.permission.SSRM_NOTIFICATION_PERMISSION"/>
+        <permission name="com.samsung.permission.HQM_NOTIFICATION_PERMISSION"/>
+        <permission name="com.samsung.permission.PALM_MOTION"/>
+    </privapp-permissions>
+</permissions>

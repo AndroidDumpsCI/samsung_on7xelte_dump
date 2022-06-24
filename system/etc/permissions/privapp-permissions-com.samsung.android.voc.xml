@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+This XML file declares which signature|privileged permissions should be granted to privileged
+applications that come with the platform
+-->
+<permissions>
+  <privapp-permissions package="com.samsung.android.voc">
+    <permission name="android.permission.CAPTURE_SECURE_VIDEO_OUTPUT"/>
+    <permission name="android.permission.CAPTURE_VIDEO_OUTPUT"/>
+    <permission name="android.permission.DELETE_PACKAGES"/>
+    <permission name="android.permission.DUMP"/>
+    <permission name="android.permission.INSTALL_PACKAGES"/>
+    <permission name="android.permission.LOCATION_HARDWARE"/>
+    <permission name="android.permission.OVERRIDE_WIFI_CONFIG"/>
+    <permission name="android.permission.READ_LOGS"/>
+    <permission name="com.samsung.permission.SSENSOR"/>
+  </privapp-permissions>
+</permissions>
